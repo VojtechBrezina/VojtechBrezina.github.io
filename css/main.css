@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --c-background: #282a36;
+    --c-foreground: #f8f8f2;
+    --c-bg-accent: #44475a;
+    --c-comment: #6272a4;
+    --c-orange: #ffb86c;
+    --c-pink: #ff79c6;
+    --c-purple: #bd93f9;
+    --c-yellow: #f1fa8c;
+}
+
+body {
+    background-color: #111;
+    margin: 0;
+    font-family: Ubuntu;
+}
+
+.content {
+    background-color: var(--c-background);
+    color: var(--c-foreground);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code {
+    font-family: 'Ubuntu Mono' monospace;
+}
+
+.comment {
+    color: var(--c-comment);
+}
+
+a {
+    color: var(--c-pink);
+}
+
+b {
+    color: var(--c-orange);
+}
+
+i {
+    color: var(--c-yellow);
+}
+
+h1, h2 {
+    color: var(--c-purple);
+}
+
+@media only screen and (max-width: 1000px){
+    .content {
+        margin: 0;
+    }
+
+    body {
+        background-color: var(--c-background);
+    }
+}
