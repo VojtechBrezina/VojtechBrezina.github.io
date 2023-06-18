@@ -1,0 +1,16 @@
+<style>
+@import url('/components/page.css');
+
+:host{
+    display: block;
+    padding: var(--d-small-gap);
+}
+
+:host([article]){
+    max-width: 960px;
+    margin: var(--d-small-gap) auto;
+    background-color: var(--c-highlight);
+}
+
+</style>
+<slot></slot>

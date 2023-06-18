@@ -1,0 +1,18 @@
+@import url('/styles/base.css');
+
+:host {
+    display: flex;
+    align-items: baseline;
+    padding: var(--d-small-gap);
+    gap: var(--d-small-gap);
+    margin-bottom: var(--d-small-gap);
+    border-bottom: 2px solid var(--c-white);
+    position: sticky;
+    top: 0;
+    background-color: var(--c-highlight);
+}
+
+#title {
+    flex-grow: 1;
+    margin: 0;
+}

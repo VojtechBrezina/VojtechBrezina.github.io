@@ -1,0 +1,20 @@
+:root {
+    /* Some basic colors as seen in https://draculatheme.com/contribute (MIT license) */
+
+    --c-background: #282a36;
+    --c-highlight: #44475a;
+    --c-dim: #6272a4;
+
+    --c-white: #f8f8f2;
+    --c-cyan: #8be9fd;
+    --c-green: #50fa7b;
+    --c-orange: #ffb86c;
+    --c-pink: #ff79c6;
+    --c-pruple: #bd93f9;
+    --c-red: #ff5555;
+    --c-yellow: #f1fa8c;
+
+    /* Commonly used lengths in case I decide to change them */
+
+    --d-small-gap: 10px;
+}

@@ -1,0 +1,9 @@
+.ktane-header {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.ktane-header h1 {
+    flex-grow: 1;
+}

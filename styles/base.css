@@ -1,0 +1,14 @@
+@import url('/styles/values.css');
+
+body {
+    margin: 0;
+}
+
+:root {
+    color: var(--c-white);
+    background-color: var(--c-background);
+}
+
+a {
+    color: var(--c-cyan);
+}
