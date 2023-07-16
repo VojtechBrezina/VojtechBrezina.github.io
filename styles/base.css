@@ -4,11 +4,76 @@ body {
     margin: 0;
 }
 
-:root {
+:root, dialog {
     color: var(--c-white);
     background-color: var(--c-background);
 }
 
 a {
     color: var(--c-cyan);
+}
+
+button {
+    border-radius: var(--d-br-small);
+    border: none;
+    padding: var(--d-tiny-gap) var(--d-small-gap);
+    color: var(--c-background);
+    background-color: var(--c-white);
+}
+
+button.cyan { background-color: var(--c-cyan); }
+button.green { background-color: var(--c-green); }
+button.orange { background-color: var(--c-orange); }
+button.pink { background-color: var(--c-pink); }
+button.purple { background-color: var(--c-purple); }
+button.red { background-color: var(--c-red); }
+button.yellow { background-color: var(--c-yellow); }
+
+button.outline {
+    border-radius: var(--d-br-small);
+    border: 2px solid var(--c-white);
+    padding: var(--d-tiny-gap) var(--d-small-gap);
+    color: var(--c-white);
+    background-color: var(--c-background);
+}
+
+button.outline.cyan { color: var(--c-cyan); border-color: var(--c-cyan); }
+button.outline.green { color: var(--c-green); border-color: var(--c-green); }
+button.outline.orange { color: var(--c-orange); border-color: var(--c-orange); }
+button.outline.pink { color: var(--c-pink); border-color: var(--c-pink); }
+button.outline.purple { color: var(--c-purple); border-color: var(--c-purple); }
+button.outline.red { color: var(--c-red); border-color: var(--c-red); }
+button.outline.yellow { color: var(--c-yellow); border-color: var(--c-yellow); }
+
+
+span.cyan { color: var(--c-cyan); }
+span.green { color: var(--c-green); }
+span.orange { color: var(--c-orange); }
+span.pink { color: var(--c-pink); }
+span.purple { color: var(--c-purple); }
+span.red { color: var(--c-red); }
+span.yellow { color: var(--c-yellow); }
+span.dim { color: var(--c-dim); }
+
+input[type=text], input[type=number], textarea, .input {
+    border: 1px solid var(--c-white);
+    color: var(--c-white);
+    background-color: var(--c-background);
+    padding: var(--d-tiny-gap);
+}
+
+input[type=text]:focus, input[type=number]:focus, textarea:focus, .input:focus {
+    outline: none;
+    border-color: var(--c-yellow);
+}
+
+dialog {
+    background-color: var(--c-highlight);
+    border: 1px solid var(--c-white);
+    padding: var(--d-small-gap);
+}
+
+hr {
+    border: 1px solid var(--c-white);
+    border-bottom: none;
 }

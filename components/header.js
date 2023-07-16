@@ -1,13 +1,11 @@
-const shadowHtml = await fetch('/components/header.html').then((r) => r.text());
+import * as Component from '/modules/components.js'
 
-window.customElements.define(
-    'vb-header', 
-    class extends HTMLElement {
+await Component.create(
+    'vb-header',
+    '/components/header.html',
+    helper => class extends helper {
         constructor(){
             super();
-
-            this.attachShadow({ mode: 'open' });
-            this.shadowRoot.innerHTML = shadowHtml;
 
             this.shadowRoot.querySelector('#title').textContent =
                 this.getAttribute('title') ?? document.title;

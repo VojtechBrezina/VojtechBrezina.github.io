@@ -10,11 +10,16 @@
     --c-green: #50fa7b;
     --c-orange: #ffb86c;
     --c-pink: #ff79c6;
-    --c-pruple: #bd93f9;
+    --c-purple: #bd93f9;
     --c-red: #ff5555;
     --c-yellow: #f1fa8c;
 
     /* Commonly used lengths in case I decide to change them */
 
+    --d-tiny-gap: 5px;
     --d-small-gap: 10px;
+    --d-large-gap: 20px;
+
+    --d-br-small: 5px; /* Buttons or badges for example */
+    --d-br-large: 10px; /* Things that do not directly contain text */
 }

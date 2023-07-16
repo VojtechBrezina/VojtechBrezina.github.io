@@ -6,17 +6,76 @@
         <title>KTANE RTC notebook</title>
         <link rel="stylesheet" href="ktane.css">
         <link rel="stylesheet" href="/styles/base.css">
+
         <script type="module" src="/components/page.js"></script>
         <script type="module" src="/components/header.js"></script>
+
+        <script type="module" src="/ktane/components/bomb-props.js"></script>
+        <script type="module" src="/ktane/components/preferences.js"></script>
     </head>
     <body>
         <vb-header>
-            <button>Info</button>
-            <button>Preferences</button>
+            <div>Mode: <span id="fairness">default</span></div>
+            <button onclick="document.querySelector('#info').showModal()">Info</button>
+            <button onclick="document.querySelector('#preferences').open()">Preferences</button>
         </vb-header>
         <vb-page>
-            <p>Here is your notebook lol (yes, this is obviously a placeholder):</p>
-            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+            <dialog id="info">
+                <div>
+                    <h2>Info</h2>
+                    <p>
+                    This is a helpful notebook for <span class="yellow">Keep
+                    Talking and Nobody Explodes - Road To Centurion</span> made using
+                    <a href="https://lotsofs.github.io/KTANE/#RoadToCenturion">this</a>
+                    great resource. It is meant to help you exactly the way, you
+                    want it to.
+                    <p>
+                    By default, all it does is provide an overview of the manual
+                    that has slots for taking relevant notes. If
+                    you think it is fair to do so, you can enable some tools in
+                    the Preferences menu. Some of them will just highlight your
+                    notes, to make certain pieces of information stand out, others
+                    will highlight sections of the rules based on your notes and
+                    some of them will even tell you exactly what to do.
+                    <p>
+                    It is completely up to you and the people you play with where
+                    you draw the line.
+                    <p>
+                    The tools are colorcoded as follows with the highest enabled
+                    tool affecting the overall mode displayed at the top:
+                    <h3><span class="green">Completely harmless</span></h3>
+                    <p>
+                    These are things that could realistically be achieved with
+                    pen and paper, but they do save some time and effort. They
+                    usually just highlight important things in your notes.
+                    <h3><span class="yellow">Discutable</span></h3>
+                    <p>
+                    With these there is still no new information introduced, but
+                    they do save a lot of effort. For example by making rules with
+                    &OpenCurlyDoubleQuote;<i>only if there is a vowel in the
+                    serial number</i>&CloseCurlyDoubleQuote;
+                    have a darker color when that is not the case.
+                    <h3><span class="orange">Certainly unfair</span></h3>
+                    <p>
+                    These tools will even go the extra mile to make the choices
+                    for you exactly as the rules describe them and there is
+                    probably no excuse for using them in any legitimate game as
+                    they will do some basic maths for you and completely break
+                    easier modules.
+                    <h3><span class="red">Plain cheats</span></h3>
+                    <p>
+                    These are here just for me to flex my programming skills or
+                    perhaps to explore some more complex properties of the modules
+                    outside of actual games. These things will do all the
+                    computation I can come up with to solve some of the more
+                    difficult or even chance based puzzles.
+                </div>
+                <button onclick="document.querySelector('#info').close()">close</button>
+            </dialog>
+            <ktane-preferences id="preferences"></ktane-preferences>
+            <ktane-bomb-props></ktane-bomb-props>
+            <p>This is work in progress, but you can take notes down here :)</p>
+            <textarea name="notes" id="notes" cols="50" rows="30"></textarea>
         </vb-page>
     </body>
 </html>

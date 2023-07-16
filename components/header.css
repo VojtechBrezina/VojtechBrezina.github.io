@@ -2,11 +2,10 @@
 
 :host {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding: var(--d-small-gap);
     gap: var(--d-small-gap);
     margin-bottom: var(--d-small-gap);
-    border-bottom: 2px solid var(--c-white);
     position: sticky;
     top: 0;
     background-color: var(--c-highlight);
