@@ -1,0 +1,11 @@
+version = "0.1"
+
+[assemblers]
+nasm = true
+gas = true
+
+[instruction_sets]
+x86_64 = true
+
+[opts]
+diagnostics = false

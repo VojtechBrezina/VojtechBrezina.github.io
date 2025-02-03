@@ -1,0 +1,18 @@
+baseURL = 'https://VojtechBrezina.github.io/'
+languageCode = 'en-us'
+title = "VB's blog"
+theme = 'ananke'
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/projects'
+
+[markup.goldmark.renderer]
+unsafe = true
