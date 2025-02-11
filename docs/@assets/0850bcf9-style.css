@@ -1,0 +1,90 @@
+html {
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: cyan;
+    text-decoration: cyan underline;
+
+    &[target=_blank]::after {
+        content: '(opens in a new tab)';
+        vertical-align: super;
+        font-size: 0.6rem;
+    }
+
+    &:lang('cs')[target=_blank]::after {
+        content: '(otevře novou záložku)';
+    }
+
+    &:visited {
+        text-decoration: lightblue underline;
+    }
+}
+
+article {
+    p, li {
+        text-align: justify;
+    }
+}
+
+header {
+    background: #222;
+    position: sticky;
+    top: 0;
+
+    nav ul {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-start;
+        padding: 16px;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+
+            &:first-child {
+                margin-right: 32px;
+            }
+        }
+
+        a.active {
+            font-weight: bold;
+        }
+    }
+}
+
+.breadcrumbs {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+
+    li {
+        &::after {
+            content: '>';
+            margin-left: 8px;
+        }
+
+        &:nth-last-child(1)::after {
+            content: '';
+            margin-left: 0;
+        }
+    }
+}
+
+li:lang('cs')::before {
+    content: '[CS]';
+    vertical-align: super;
+    font-size: 0.6rem;
+}
