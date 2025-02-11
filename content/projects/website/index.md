@@ -1,6 +1,8 @@
 ---
-
+meta:
+    description: Creating a flexible SSG from scratch in Python
 ---
+
 # How this website is built
 
 I decided to build my own SSG almost from scratch because the other ones seemed

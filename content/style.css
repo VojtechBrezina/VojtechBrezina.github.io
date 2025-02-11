@@ -4,6 +4,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    margin: 0;
+}
+
 main {
     max-width: 800px;
     margin-left: auto;
@@ -15,9 +19,13 @@ a {
     text-decoration: cyan underline;
 
     &[target=_blank]::after {
-        content: '(opens in new tab)';
+        content: '(opens in a new tab)';
         vertical-align: super;
         font-size: 0.6rem;
+    }
+
+    &:lang('cs')[target=_blank]::after {
+        content: '(otevře novou záložku)';
     }
 
     &:visited {
@@ -31,18 +39,52 @@ article {
     }
 }
 
-header nav ul {
+header {
+    background: #222;
+    position: sticky;
+    top: 0;
+
+    nav ul {
+        display: flex;
+        gap: 16px;
+        justify-content: flex-start;
+        padding: 16px;
+        margin: 0;
+
+        li {
+            list-style-type: none;
+
+            &:first-child {
+                margin-right: 32px;
+            }
+        }
+
+        a.active {
+            font-weight: bold;
+        }
+    }
+}
+
+.breadcrumbs {
+    list-style-type: none;
     display: flex;
-    gap: 16px;
-    justify-content: flex-start;
-    padding: 16px;
-    margin: 0;
+    gap: 8px;
 
     li {
-        list-style-type: none;
-    }
+        &::after {
+            content: '>';
+            margin-left: 8px;
+        }
 
-    a.active {
-        font-weight: bold;
+        &:nth-last-child(1)::after {
+            content: '';
+            margin-left: 0;
+        }
     }
+}
+
+li:lang('cs')::before {
+    content: '[CS]';
+    vertical-align: super;
+    font-size: 0.6rem;
 }

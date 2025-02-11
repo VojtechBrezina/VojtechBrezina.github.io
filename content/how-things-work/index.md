@@ -16,7 +16,4 @@ subsystem](https://learn.microsoft.com/en-us/windows/wsl/install){target=_blank}
 and other operating systems usualy have a POSIX layer and that is what I try to
 target as much as possible.
 
-<script type="text/python">
-# Maybe do a recursive valk.
-print("TODO: List categories.")
-</script>
+<nav data-children></nav>

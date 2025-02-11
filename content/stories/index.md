@@ -15,6 +15,4 @@ meta:
 
 Tady je pár sci-fi povídek, které jsem zkusil napsat.
 
-<script type="text/python">
-print('TODO: List stories!')
-</script>
+<nav data-children></nav>

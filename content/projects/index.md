@@ -1,3 +1,7 @@
+---
+meta:
+    description: My long-term projects
+---
 # Projects
 
 Information about my long-term projects and more importantly all the things I
@@ -7,9 +11,7 @@ learned from them.
 
 These are the one I am actively working on.
 
-<script type="text/python">
-print("TODO: List projects")
-</script>
+<nav data-children></nav>
 
 ## Stuff I would like to try one day
 
@@ -56,5 +58,6 @@ two pieces of information:
 To a program trying to parse it without any context, the subject of the second
 part of this sentence is unknown. To succesfully solve this problem I will have
 to find an efficient way to store all the information needed to make such
-distinctions. The [Resource Description Framework](https://www.w3.org/RDF/) gave
-me some ideas about that.
+distinctions. The [Resource Description
+Framework](https://www.w3.org/RDF/){target=_blank} gave me some ideas about
+that.
